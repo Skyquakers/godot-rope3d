@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxcrxm8x8terr"]
+
+[ext_resource type="Script" path="res://addons/rope3d/rope3d.gd" id="1_65maw"]
+[ext_resource type="Script" path="res://addons/rope3d/rope_mesh.gd" id="2_fse5m"]
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_f4lff"]
+
+[sub_resource type="Curve3D" id="Curve3D_vu8he"]
+
+[node name="Rope3D" type="Node3D"]
+script = ExtResource("1_65maw")
+resolution = null
+rope_length = null
+segment_length = null
+radius = null
+
+[node name="RopeMesh" type="MeshInstance3D" parent="." node_paths=PackedStringArray("path")]
+mesh = SubResource("ImmediateMesh_f4lff")
+script = ExtResource("2_fse5m")
+path = NodePath("Path3D")
+
+[node name="Path3D" type="Path3D" parent="RopeMesh"]
+curve = SubResource("Curve3D_vu8he")

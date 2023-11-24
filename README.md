@@ -2,6 +2,12 @@
 
 Physical 3D rope that interacts with `RigidBody3D`
 
+
+
+https://github.com/Skyquakers/godot-rope3d/assets/2919533/42f719ce-c096-4c1f-8274-eec8e47022e3
+
+
+
 # Installation
 
 Via asset library

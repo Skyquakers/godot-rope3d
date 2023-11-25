@@ -52,7 +52,7 @@ Due to dynamic generating, there are many situations that `rope.make()` can rais
 - The size of segment is longer than the rope
 - Two global positions of `Node3D` and the turning point position cannot constitude to a triangle, as shown in the figure below
 
-![triangle figure](https://juryquinn.com/Technology/_image/dynamic_rope_3.png)
+![dynamic_rope_3](https://github.com/Skyquakers/godot-rope3d/assets/2919533/ae40f2dc-a15d-447a-aa93-d2d274ce63db)
 
 If you want to make gameplays that allows player to create rope on the fly, make sure to check the `boolean` result of `rope.make()` or `rope.can_make()`
 

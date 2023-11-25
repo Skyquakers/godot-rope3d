@@ -1,6 +1,6 @@
 # Godot Rope3D
 
-Physical 3D rope that interacts with `RigidBody3D`
+Physical 3D rope based on `PinJoint3D` that interacts with `RigidBody3D`
 
 
 [![Youtube Video](https://img.youtube.com/vi/cEQaXuW3KQQ/0.jpg)](https://www.youtube.com/watch?v=cEQaXuW3KQQ)

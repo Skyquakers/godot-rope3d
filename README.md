@@ -3,7 +3,7 @@
 Physical 3D rope that interacts with `RigidBody3D`
 
 
-[![Youtube Video](https://img.youtube.com/vi/dr0yJTLtpkI/0.jpg)](https://www.youtube.com/watch?v=dr0yJTLtpkI)
+[![Youtube Video](https://img.youtube.com/vi/cEQaXuW3KQQ/0.jpg)](https://www.youtube.com/watch?v=cEQaXuW3KQQ)
 
 
 
@@ -37,7 +37,7 @@ func _ready():
 	rope.resolution = 6.0   # number of sphere rigidbody3ds
 	rope.radius = 0.1
 	
-	var ok = rope.can_render()
+	var ok = rope.can_make()
 	if ok:
 		add_child(rope)
 		rope.make()

@@ -36,7 +36,7 @@ var middle_point: Vector3 :
 		return start_point.global_transform.origin + (end_point.global_transform.origin - start_point.global_transform.origin) / 2.0
 
 
-func can_render() -> bool:
+func can_make() -> bool:
 	return _prepare()
 
 
@@ -208,7 +208,7 @@ func _is_triangle(a: float, b: float, c: float) -> bool:
 	return true
 
 
-func _process(_delta):
+func _physics_process(_delta):
 	if _generated:
 		_update_mesh()
 

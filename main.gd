@@ -14,7 +14,7 @@ func _ready():
 	rope.resolution = 6.0
 	rope.radius = 0.1
 	
-	var ok = rope.can_render()
+	var ok = rope.can_make()
 	print(ok)
 	if ok:
 		add_child(rope)

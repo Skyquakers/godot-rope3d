@@ -9,10 +9,6 @@
 
 [node name="Rope3D" type="Node3D"]
 script = ExtResource("1_65maw")
-resolution = null
-rope_length = null
-segment_length = null
-radius = null
 
 [node name="RopeMesh" type="MeshInstance3D" parent="." node_paths=PackedStringArray("path")]
 mesh = SubResource("ImmediateMesh_f4lff")

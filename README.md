@@ -3,7 +3,8 @@
 Physical 3D rope based on `PinJoint3D` that interacts with `RigidBody3D`
 
 
-[![Youtube Video](https://img.youtube.com/vi/cEQaXuW3KQQ/0.jpg)](https://www.youtube.com/watch?v=cEQaXuW3KQQ)
+
+![bc55450e-cf9b-4038-8c1b-3eb9aa2e3154](https://github.com/Skyquakers/godot-rope3d/assets/2919533/c50cd9d7-7dc3-47cf-b497-2cdca25190e1)
 
 
 

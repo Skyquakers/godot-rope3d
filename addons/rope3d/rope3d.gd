@@ -10,6 +10,9 @@ const Circle: GDScript = preload("./sphere_sphere_circle.gd")
 @export var start_point: Node3D
 @export var end_point: Node3D
 @export var radius := 0.1
+@export var bias = 0.3
+@export var damping = 1.
+@export var impulse_clamp = 0.
 
 
 var segments := []
@@ -186,6 +189,9 @@ func _generate_joint_between(body_a: PhysicsBody3D, body_b: PhysicsBody3D, prior
 	joint.set_node_a(body_a.get_path())
 	joint.set_node_b(body_b.get_path())
 	joint.set_solver_priority(priority)
+	joint.set_param(PinJoint3D.PARAM_BIAS, bias)
+	joint.set_param(PinJoint3D.PARAM_DAMPING, damping)
+	joint.set_param(PinJoint3D.PARAM_IMPULSE_CLAMP, impulse_clamp)
 	return joint
 
 
@@ -214,6 +220,8 @@ func _physics_process(_delta):
 
 
 func _update_mesh():
+	if rope_mesh.path.curve.point_count == 0:
+		return
 	rope_mesh.path.curve.set_point_position(0, start_point.global_position)
 	rope_mesh.path.curve.set_point_position(
 		rope_mesh.path.curve.point_count - 1,

@@ -35,8 +35,13 @@ func _ready():
 	rope.start_point = start_point
 	rope.end_point = end_point
 	rope.rope_length = 6.0
-	rope.resolution = 6.0   # number of pinjoints
 	rope.radius = 0.1
+	rope.resolution = 6.0   # number of pinjoints
+	
+	# adjust pin joint attributes
+	rope.bias = 0.3
+	rope.damping = 1.0
+	rope.impulse_clamp = 0.01
 	
 	var ok = rope.can_make()
 	if ok:
